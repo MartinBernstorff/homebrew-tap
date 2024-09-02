@@ -5,21 +5,21 @@
 class Gokid < Formula
   desc "A simple CLI to submit changes"
   homepage "https://github.com/martinbernstorff/gokid"
-  version "1.0.14"
+  version "1.0.15"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.14/gokid_Darwin_x86_64.tar.gz"
-      sha256 "8fd261e9d83f8d7fbc52b19108fcca1be6cfa6e8c9c9bcd15c8bb2c15273ac5f"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.15/gokid_Darwin_x86_64.tar.gz"
+      sha256 "50686358ce9b019aa6dc5f6e892dfa1d99bfb1c5c0aa998e6e804ad582b94b82"
 
       def install
         bin.install "gokid"
       end
     end
     on_arm do
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.14/gokid_Darwin_arm64.tar.gz"
-      sha256 "a6011142206a13d96af4095130ef05df9c39746b24b5267e210012ef42475bda"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.15/gokid_Darwin_arm64.tar.gz"
+      sha256 "623e0a483edc09f47dd474cfaeecc227f8b8df272cbfebc153d7638bf20158dd"
 
       def install
         bin.install "gokid"
@@ -30,8 +30,8 @@ class Gokid < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.14/gokid_Linux_x86_64.tar.gz"
-        sha256 "a8b947bcefa7c518b2805a99771bda284849b08ccafb9018d15942eb69307498"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.15/gokid_Linux_x86_64.tar.gz"
+        sha256 "e05153b5c5f1066726f4a119c1ccd2c9e354793c7cfee0e15209e3662a145341"
 
         def install
           bin.install "gokid"
@@ -40,8 +40,8 @@ class Gokid < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.14/gokid_Linux_arm64.tar.gz"
-        sha256 "23e6c41bdc739abe631fa651938d7e75ea02aa0663c1da9a145d2ba9a5921962"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.0.15/gokid_Linux_arm64.tar.gz"
+        sha256 "b1e9823f6bd27da3a7fd9b8673b8fd6ccf49f15fa87fc3b867e0ceca60c4cf74"
 
         def install
           bin.install "gokid"
