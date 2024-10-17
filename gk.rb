@@ -5,13 +5,13 @@
 class Gk < Formula
   desc "A simple CLI to submit changes"
   homepage "https://github.com/martinbernstorff/gokid"
-  version "1.7.4"
+  version "1.7.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.4/gk_Darwin_x86_64.tar.gz"
-      sha256 "29c02883ccc95f6b9d86aced4c77d9e4b15980d61696aa0cf22f1ad1ad125ec2"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.5/gk_Darwin_x86_64.tar.gz"
+      sha256 "37a14f4d4379e66eeaf847b7790534108314a9d886766859147f634b78f4e9db"
 
       def install
         bin.install "gk"
@@ -19,8 +19,8 @@ class Gk < Formula
       end
     end
     on_arm do
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.4/gk_Darwin_arm64.tar.gz"
-      sha256 "fcd0a53c393956ad3f03c45f8a1b0645cb821a2897b19b1eed444a30c6b0cbb5"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.5/gk_Darwin_arm64.tar.gz"
+      sha256 "c96361b342afb0c3bb0e1243a0197116c9845dbc5cbef6631dc8d3c83fa24f2d"
 
       def install
         bin.install "gk"
@@ -32,8 +32,8 @@ class Gk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.4/gk_Linux_x86_64.tar.gz"
-        sha256 "12bc015476aa71f36deab69e758efcf10946d3ba0a4f5613ea216e939c08a45b"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.5/gk_Linux_x86_64.tar.gz"
+        sha256 "d1f1ecf487a7254bfe35dc25e73b7e2d8d3b006f02fd4d7bf66b6785109b6e75"
 
         def install
           bin.install "gk"
@@ -43,8 +43,8 @@ class Gk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.4/gk_Linux_arm64.tar.gz"
-        sha256 "0ee9ffccc7eb095a0f05d1259e695856f596c9f93371de51988160b4b9a6db77"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.7.5/gk_Linux_arm64.tar.gz"
+        sha256 "eb6ecbc30005f4ccb9806faddf05e82fd035cbf3935e577cb829e0129e5be00f"
 
         def install
           bin.install "gk"
