@@ -5,13 +5,13 @@
 class Gk < Formula
   desc "A simple CLI to submit changes"
   homepage "https://github.com/martinbernstorff/gokid"
-  version "1.31.11"
+  version "1.31.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.11/gk_Darwin_x86_64.tar.gz"
-      sha256 "ac1d6cb59fcf994d4111586b042cfe5e3aeb90f86b11160f031f8690719c33d1"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.12/gk_Darwin_x86_64.tar.gz"
+      sha256 "4f1391e2f9abee464ef5e693ffb1ba7a38f7082af85cc4322fd18087bba21612"
 
       def install
         bin.install "gk"
@@ -19,8 +19,8 @@ class Gk < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.11/gk_Darwin_arm64.tar.gz"
-      sha256 "dca11871ce6f4ebe5361cd42f729a79f92f405be44b72747ef390faa7cb5fbe3"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.12/gk_Darwin_arm64.tar.gz"
+      sha256 "1ed76253b8020a298c0d7a90138c0e881b69136515635b08790601b78b8f2dba"
 
       def install
         bin.install "gk"
@@ -32,8 +32,8 @@ class Gk < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.11/gk_Linux_x86_64.tar.gz"
-        sha256 "7688db1280634665798238f1055cbc30a48da2be5c70382f6dbda7f033182460"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.12/gk_Linux_x86_64.tar.gz"
+        sha256 "1174d00092bebd969ad7dabfdf2c8be1b747433a3db74b5d66116ce57bef808e"
 
         def install
           bin.install "gk"
@@ -43,8 +43,8 @@ class Gk < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.11/gk_Linux_arm64.tar.gz"
-        sha256 "2d0831c2100d0eb6ce03d1fadafd1c7f807d8832571fe6661a692fd6583e6470"
+        url "https://github.com/MartinBernstorff/gokid/releases/download/v1.31.12/gk_Linux_arm64.tar.gz"
+        sha256 "5179354ac3f15805583a9c7994cb5a854adff3929451bb228c87574f1e93c9ee"
 
         def install
           bin.install "gk"
