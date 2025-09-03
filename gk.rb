@@ -5,13 +5,13 @@
 class Gk < Formula
   desc "A simple CLI to submit changes"
   homepage "https://github.com/martinbernstorff/gokid"
-  version "1.40.0"
+  version "1.40.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.0/gk_Darwin_x86_64.tar.gz"
-      sha256 "3d0b4f99b222171ec743a20bf28bcff0514835a6bcd67d1490bf86c4a115d481"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.1/gk_Darwin_x86_64.tar.gz"
+      sha256 "446af712f7f5f6f0093d5dba5627de85c71f3bec137db42ff66c456cf7b5e34c"
 
       def install
         bin.install "gk"
@@ -19,8 +19,8 @@ class Gk < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.0/gk_Darwin_arm64.tar.gz"
-      sha256 "bec552bed42c667bc0dc25d570000e70e4952ea5457f4396164c7f334d2a78d7"
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.1/gk_Darwin_arm64.tar.gz"
+      sha256 "fda31877ac58f58dcaf1ec119226c57f6838251bec58f64834c1e0e1f3338ea6"
 
       def install
         bin.install "gk"
@@ -30,17 +30,17 @@ class Gk < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.0/gk_Linux_x86_64.tar.gz"
-      sha256 "fd261c5fc53e62c84b8de5c400b795dc99279709caecb9f9766d2c6061248b3b"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.1/gk_Linux_x86_64.tar.gz"
+      sha256 "10dfcb5391fbf98c49266b9b33bdad288170dadc1ddc5310cd3a50f8e8ffd98e"
       def install
         bin.install "gk"
         bin.install_symlink bin/"gk" => "gokid"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.0/gk_Linux_arm64.tar.gz"
-      sha256 "66f9efb77f1687a16277676b0903a63aaed754ddcce279f9974a19d1fb35bb75"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/MartinBernstorff/gokid/releases/download/v1.40.1/gk_Linux_arm64.tar.gz"
+      sha256 "becb26e0e98bc416f38f2f379e66ee68a11a0edf4e92d33f7c3a3d535a5b00ac"
       def install
         bin.install "gk"
         bin.install_symlink bin/"gk" => "gokid"
